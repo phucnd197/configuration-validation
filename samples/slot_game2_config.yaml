@@ -1,0 +1,81 @@
+game_metadata:
+  game_name: "NeonOverdrive 2099"
+  slot_machine_id: "slot_cyber_09_high"
+  app_version_target: ">=3.0.1"
+  build_targets:
+    - iOS
+    - Android
+    - WebGL
+
+bet_settings:
+  currency: "NeonCredits"
+  default_bet: 5000
+  bet_levels: [500, 1000, 2500, 5000, 10000, 25000, 50000, 100000]
+
+reel_configuration:
+  reel_count: 6
+  row_count: 4
+  symbols:
+    - id: "W1"
+      name: "Wild_CyberDisk"
+      type: "Wild"
+    - id: "S1"
+      name: "Scatter_Matrix"
+      type: "Scatter"
+    - id: "H1"
+      name: "High_NetRunner"
+      type: "HighPayout"
+    - id: "H2"
+      name: "High_SynthCyborg"
+      type: "HighPayout"
+    - id: "M1"
+      name: "Mid_LaserKatana"
+      type: "MediumPayout"
+    - id: "L1"
+      name: "Low_DataShard"
+      type: "LowPayout"
+
+payout_table:
+  - symbol_id: "H1"
+    match_count: 3
+    multiplier: 25
+  - symbol_id: "H1"
+    match_count: 4
+    multiplier: 100
+  - symbol_id: "H1"
+    match_count: 5
+    multiplier: 500
+  - symbol_id: "H2"
+    match_count: 3
+    multiplier: 15
+  - symbol_id: "H2"
+    match_count: 4
+    multiplier: 60
+  - symbol_id: "H2"
+    match_count: 5
+    multiplier: 300
+
+jackpot_settings:
+  jackpot_enabled: false
+  jackpot_type: "None"
+  base_pool_value: 0
+  contribution_rate: 0.0
+  min_bet_to_qualify: 0
+
+feature_flags:
+  free_spins_enabled: true
+  gamble_minigame_enabled: true
+  buy_feature_allowed: false
+
+liveops_campaign:
+  campaign_id: "camp_cyber_punk_weekend_2026"
+  campaign_name: "Mega Grid Hackathon"
+  player_segments:
+    - "High_Rollers"
+    - "Churn_Risk_VIP"
+  schedule:
+    start_time_utc: "2026-07-10T18:00:00Z"
+    end_time_utc: "2026-07-13T08:00:00Z"
+  rewards:
+    entry_bonus_chips: 25000
+    xp_multiplier: 2.0

@@ -1,0 +1,96 @@
+{
+    "game_metadata": {
+        "game_name": "PharaohsGold Deluxe",
+        "slot_machine_id": "slot_egypt_04_hd",
+        "app_version_target": ">=2.14.0",
+        "build_targets": [
+            "iOS",
+            "Android"
+        ]
+    },
+    "bet_settings": {
+        "currency": "GoldChips",
+        "default_bet": 1000,
+        "bet_levels": [
+            100,
+            500,
+            1000,
+            2500,
+            5000,
+            10000,
+            25000,
+            50000
+        ]
+    },
+    "reel_configuration": {
+        "reel_count": 5,
+        "row_count": 3,
+        "symbols": [
+            {
+                "id": "S1",
+                "name": "Wild_Anubis",
+                "type": "Wild"
+            },
+            {
+                "id": "S2",
+                "name": "Scatter_Pyramid",
+                "type": "Scatter"
+            },
+            {
+                "id": "S3",
+                "name": "High_Pharaoh",
+                "type": "HighPayout"
+            },
+            {
+                "id": "S4",
+                "name": "High_Cleopatra",
+                "type": "HighPayout"
+            }
+        ]
+    },
+    "payout_table": [
+        {
+            "symbol_id": "S3",
+            "match_count": 3,
+            "multiplier": 10
+        },
+        {
+            "symbol_id": "S3",
+            "match_count": 4,
+            "multiplier": 50
+        },
+        {
+            "symbol_id": "S3",
+            "match_count": 5,
+            "multiplier": 200
+        }
+    ],
+    "jackpot_settings": {
+        "jackpot_enabled": true,
+        "jackpot_type": "Progressive",
+        "base_pool_value": 1000000,
+        "contribution_rate": 0.02,
+        "min_bet_to_qualify": 1000
+    },
+    "feature_flags": {
+        "free_spins_enabled": true,
+        "gamble_minigame_enabled": false,
+        "buy_feature_allowed": true
+    },
+    "liveops_campaign": {
+        "campaign_id": "camp_summer_solstice_2026",
+        "campaign_name": "Summer Solstice Special",
+        "player_segments": [
+            "VIP_Tier_1",
+            "High_Rollers"
+        ],
+        "schedule": {
+            "start_time_utc": "2026-06-20T00:00:00Z",
+            "end_time_utc": "2026-06-27T23:59:59Z"
+        },
+        "rewards": {
+            "entry_bonus_chips": 5000,
+            "xp_multiplier": 1.5
+        }
+    }
+}

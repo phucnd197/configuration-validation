@@ -1,15 +1,11 @@
-﻿using Cocona;
+using Cocona;
 using ConfigurationValidation.Commands;
-using ConfigurationValidation.Models;
-using System.Text.Json;
 
 var builder = CoconaApp.CreateBuilder();
 var app = builder.Build();
 
 app.AddCommands<LoadFilesCommand>();
-
-
-app.AddCommand("verify",);
-
+app.AddCommands<VerifyConfigurationFileCommand>();
+app.AddCommands<CompareFilesCommand>();
 
 app.Run();
