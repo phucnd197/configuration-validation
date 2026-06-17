@@ -24,13 +24,11 @@ internal sealed class Parser
                         .Build();
                     return yamlDeserializer.Deserialize<T>(reader);
                 }
-                break;
             case ".json":
                 {
                     using var stream = File.OpenRead(path);
                     return await JsonSerializer.DeserializeAsync<T>(stream, JsonOptions);
                 }
-                break;
             default:
                 Console.WriteLine("File not in recognizable format, please use file in json or yaml");
                 return default;

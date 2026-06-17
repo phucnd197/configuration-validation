@@ -1,6 +1,6 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="ConfigurationValidation/ConfigurationValidation.csproj" />
+    <Project Path="src/ConfigurationValidation.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="test/ConfigurationValidation.Tests.csproj" />
